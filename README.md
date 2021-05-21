@@ -1,24 +1,38 @@
-# Lumen PHP Framework
+This application is created using lumen framework
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+Server Requirements 
+    PHP >= 7.3
+    OpenSSL PHP Extension
+    PDO PHP Extension
+    Mbstring PHP Extension
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
-## Official Documentation
+Step 1
+open mysql run 
+open file under database/table named table.php
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+create database, table and insert data.
 
-## Contributing
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Security Vulnerabilities
+Step 2:
+open .env file change the database credentials
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+step 3:
 
-## License
+install php version >= 7.3 
+install nginx if not there
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+step 4:
+in the lumene folder 
+run "php -S localhost:8000 -t public"
+
+Open browser/postman
+
+run 
+localhost:8000/product/list/Innovative
+
+here localhost:8000/product/list/ is api path and "Innovative" is search keyword you can change if required.
+
+
+Lot of modification like JWT based auth and handling / in keyword etc can be done in near future.
